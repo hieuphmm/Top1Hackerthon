@@ -1,26 +1,29 @@
 /* Styles for the Apples-to-Apples game page */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: #0dbde980;
   margin: 0;
   padding: 20px;
 }
 
 .container {
-  background-color: #76e918;
-  border: 1px solid #ccc;
+  background-color: #11ec48a1;
+  border: 1px solid #3cf30e;
   padding: 20px;
   margin: auto;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-  color: #333;
+  color: #db1414ce;
   text-align: center;
 }
 
 .game-status {
-  background-color: #e0e0e0;
+  background-color: #f1f3edd3;
   padding: 15px;
   margin: 10px;
   border-radius: 5px;
@@ -34,29 +37,28 @@ h1 {
 }
 
 button {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #0d00ff;
+  color: rgb(251, 252, 246);
   border: none;
   padding: 10px 15px;
-  border-radius: 5px;
+  border-radius: 30px;
   cursor: pointer;
 }
 
 button:hover:enabled {
-  background-color: #40A344;
+  background-color: #ff0000;
   color: white;
   border: none;
   padding: 10px 15px;
-  border-radius: 5px;
   cursor: pointer;
 }
 
 button:disabled {
-  background-color: #808080;
+  font-family: 'Montserrat';
+  background-color: #0d00ff;
   color: white;
   border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
+  border-radius: 30px;
   cursor: pointer;
 }
 

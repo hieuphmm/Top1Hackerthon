@@ -1,0 +1,132 @@
+Windows
+macOS
+Linux
+Chrome OS
+Android
+iOS
+Ubuntu
+Fedora
+Debian
+FreeBSD
+Haiku
+Zorin OS
+JavaScript
+Python
+Java
+PHP
+C++
+C#
+Ruby
+Swift
+Go
+Kotlin
+R
+Dart
+Amazon Web Services (AWS)
+Microsoft Azure
+Google Cloud Platform (GCP)
+IBM Cloud
+Alibaba Cloud
+Oracle Cloud
+Salesforce
+SAP
+VMware
+OpenStack
+DigitalOcean
+Heroku
+Machine Learning
+Deep Learning
+Neural Networks
+Natural Language Processing
+Image Recognition
+Signal Processing
+Robotics
+Information Retrieval
+Decision Making
+Planning
+Explanation
+Optimization
+Facebook
+YouTube
+WhatsApp
+Instagram
+TikTok
+Twitter
+LinkedIn
+Reddit
+Pinterest
+Snapchat
+Telegram
+Weibo
+Samsung
+Apple
+Xiaomi
+Oppo
+Vivo
+Huawei
+Motorola
+Lenovo
+Realme
+Tecno
+Nokia
+Google Pixel
+AMD Ryzen Threadripper
+Intel Core i9
+Apple M1 Max
+Qualcomm Snapdragon 8 Gen 1
+Nvidia Tegra X1
+MediaTek Dimensity 9000
+Samsung Exynos 2200
+HiSilicon Kirin 9000
+Unisoc Tiger T710
+Rockchip RK3588
+Allwinner A80
+Apple A16 Bionic
+Bitcoin (BTC)
+Ethereum (ETH)
+Tether (USDT)
+Binance Coin (BNB)
+USD Coin (USDC)
+Solana (SOL)
+Cardano (ADA)
+Dogecoin (DOGE)
+Polkadot (DOT)
+Shiba Inu (SHIB)
+XRP (XRP)
+Terra (LUNA)
+RAM
+SSD
+HDD
+Optane Memory
+NVRAM
+PCM
+MRAM
+STT-MRAM
+FeRAM
+Resistive RAM
+Spintronics RAM
+Memristor
+Fiber Optic
+Coaxial Cable
+Satellite
+4G
+5G
+Wi-Fi 6
+Li-Fi
+Zigbee
+Bluetooth
+UWB
+Wired Connections
+RAM
+ROM
+Fiber Optic
+SSD
+HDD
+Cache
+Register
+Flash Memory
+Optical Disc
+Magnetic Tape
+EPROM
+EEPROM
+PROM

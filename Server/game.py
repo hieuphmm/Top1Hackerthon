@@ -17,12 +17,12 @@ class Game:
 
     def reset(self):
         # Reading and initializing noun cards
-        with open('cards/nouns.txt', 'r') as f:
+        with open('cards/healthcare/answer.txt', 'r') as f:
             self.noun_cards = [line.strip() for line in f]
         random.shuffle(self.noun_cards)
         
         # Reading and initializing adjective cards
-        with open('cards/adjectives.txt', 'r') as f:
+        with open('cards/healthcare/wh-question.txt', 'r') as f:
             self.adjective_cards = [line.strip() for line in f]
         random.shuffle(self.adjective_cards)
         
@@ -37,7 +37,7 @@ class Game:
             return False, "Trò chơi đang diễn ra. Không thể đăng ký thêm người chơi mới."
         else:
             if len(self.noun_cards) < self.HAND_SIZE:
-                return False, "Số lượng thẻ danh từ không đủ để tạo ra một người chơi mới."
+                return False, "Số lượng thẻ câu trả lời không đủ để tạo ra một người chơi mới."
                 
             player_id = random.randint(1,1_000_000_000)
             while (player_id in self.players):
@@ -59,14 +59,14 @@ class Game:
         
         if len(self.adjective_cards) == 0:
             self.state = "done"
-            return False, "Không còn thẻ tính từ nào nữa. Trò chơi đã kết thúc."
+            return False, "Không còn thẻ câu hỏi nào nữa. Trò chơi đã kết thúc."
         self.target_card = self.adjective_cards.pop()
         
         for pid in self.players:
             while len(self.players[pid]['cards']) < self.HAND_SIZE:
                 if len(self.noun_cards) == 0:
                     self.state = "done"
-                    return False, "Không còn thẻ danh từ nào nữa. Trò chơi đã kết thúc."
+                    return False, "Không còn thẻ câu trả lời nào nữa. Trò chơi đã kết thúc."
                 self.players[pid]['cards'].append(self.noun_cards.pop())
         
         self.state = "round started"
@@ -78,7 +78,7 @@ class Game:
             if pid != self.judge:
                 self.send_message({'type': 'choosing', 'target': self.target_card, 'cards': self.players[pid]['cards']}, pid)
                 
-        return True, "Vòng đấu đã bắt đầu. Từ mục tiêu: " + self.target_card
+        return True, "Vòng đấu đã bắt đầu. Câu hỏi mục tiêu: " + self.target_card
         
     def submit_card(self, pid, card_num):
         if self.state == "done":
