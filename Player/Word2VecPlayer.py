@@ -13,7 +13,7 @@ from Player import Player
 ###
 class Word2VecPlayer(Player):
 
-    PLAYER_NAME = "Word2Vec Player" # Choose a unique name for your player
+    PLAYER_NAME = "Người chơi hệ máu" # Choose a unique name for your player
     
     def __init__(self):
         self.word_vectors = api.load("glove-wiki-gigaword-100")

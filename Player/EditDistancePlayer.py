@@ -14,7 +14,7 @@ import nltk
 ###
 class EditDistancePlayer(Player):
 
-    PLAYER_NAME = "EditDistance Player" # Choose a unique name for your player
+    PLAYER_NAME = "Ông hoàng khoảng cách" # Choose a unique name for your player
     
     def __init__(self):
         super().__init__(self.PLAYER_NAME)

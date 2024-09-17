@@ -33,13 +33,13 @@ def get_response(prompt):
     return output
 
 def choose_option(target, hand):
-    prompt = "Chọn 1 từ trong các từ sau: 0. "
+    prompt = "Chọn 1 câu trong các câu sau: 0. "
     prompt+= hand[0]
 
     for i in range(1,len(hand)):
         prompt+= ", "+ str(i) + ". " + hand[i]
 
-    prompt+= ". Từ nào là phù hợp nhất với tính từ: '"+ target + "'. Hãy chọn và trả về 1 con số là số thứ tự của từ đã chọn và ghi trên 1 dòng."
+    prompt+= ". Câu nào là phù hợp nhất với câu hỏi được cho: '"+ target + "'. Hãy chọn và trả về 1 con số là số thứ tự của câu đã chọn và ghi trên 1 dòng."
     res = get_response(prompt)
     print(res)
     bang_anh_xa = str.maketrans("", "", ".,:!*#()")
@@ -67,7 +67,7 @@ def choose_option(target, hand):
 
 class TestPlayer(Player):
 
-    PLAYER_NAME = "Test Player" # Choose a unique name for your player
+    PLAYER_NAME = "Người chơi hệ tét" # Choose a unique name for your player
     
     def __init__(self):
         super().__init__(self.PLAYER_NAME)
